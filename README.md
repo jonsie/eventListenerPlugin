@@ -1,3 +1,5 @@
+![CI](https://github.com/spinnaker-plugin-examples/eventListenerPlugin/workflows/CI/badge.svg?branch=master)
+
 Spinnaker Plugin for adding an event listener
 
 <h2>Usage</h2>
