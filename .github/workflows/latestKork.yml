@@ -5,8 +5,8 @@ on: repository_dispatch
 #    - cron:  '*/15 * * * *'
 
 jobs:
-  test_latest:
-    name: Test Latest
+  test_latest_kork:
+    name: Test Latest Kork
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
