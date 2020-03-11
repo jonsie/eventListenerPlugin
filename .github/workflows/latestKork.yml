@@ -22,7 +22,8 @@ jobs:
       - name: get desired version
         id: get_desired
         run: |
-          echo ::set-output name=version::$(echo "${{ steps.get_current.outputs.version }}\n${{ steps.get_latest_release.outputs.version }}" | sort -t '.' -k 1,1 -k 2,2 -k 3,3 -k 4,4 -g -r | head -n 1)
+          echo -e "${{ steps.get_current.outputs.version }}\n${{ steps.get_latest_release.outputs.version }}" > updateVersions.txt
+          echo ::set-output name=version::$(sort -t '.' -k 1,1 -k 2,2 -k 3,3 -k 4,4 -g -r updateVersions.txt | head -n 1)
       - name: test desired version
         if: steps.get_current.outputs.version != steps.get_desired.outputs.version
         run: |
