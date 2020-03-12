@@ -1,8 +1,8 @@
 name: Latest Kork
 
-on: repository_dispatch
-#  schedule:
-#    - cron:  '*/15 * * * *'
+on:
+  schedule:
+    - cron:  '*/15 * * * *'
 
 jobs:
   test_latest:
