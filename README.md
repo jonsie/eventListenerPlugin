@@ -1,4 +1,6 @@
 ![CI](https://github.com/spinnaker-plugin-examples/eventListenerPlugin/workflows/CI/badge.svg?branch=master)
+![Latest Kork](https://github.com/spinnaker-plugin-examples/eventListenerPlugin/workflows/Latest%20Kork/badge.svg?branch=master)
+![Latest Echo](https://github.com/spinnaker-plugin-examples/eventListenerPlugin/workflows/Latest%20Echo/badge.svg?branch=master)
 
 Spinnaker Plugin for adding an event listener
 
